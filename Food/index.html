@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomo Web</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="hero">
+        <nav class="navbar  navbar-dark navbar-expand-lg ">
+            <div class="container-fluid d-flex justify-content-start">
+                <button class="navbar-toggler" type="button " data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ms-2" href="#"><img src="./Images/Illustration/logo.svg" alt="" height="40px"
+                        width="100px"></a>
+
+                <button type="button" class="btn location-btn rounded-pill p-1 ms-4 fw-medium" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><img src="./Images/Illustration/location.png" alt="">
+                    Location
+                </button>
+
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 ms-5 fs-5 fw-medium mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Order
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 me-5 mb-lg-0 d-flex justify-content-end w-100">
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link text-light" href="#"><img src="./Images/Illustration/online-shopping.png"
+                                    alt=""> &nbsp; &nbsp; |</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+
+                            <a class="nav-link" href="#"><img src="./Images/Illustration/p5.png" class="rounded-circle"
+                                    alt="" height="40px" width="40px"></a>
+                            <span class="text-light">My Account</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Select a location</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" placeholder="Search Location">
+                        <a href="#" class="text-decoration-none modal-txt"><img
+                                src="./Images/Illustration/location orange.png" alt="">Use Current Location</a><br>
+                        <a href="#" class="text-decoration-none text-dark">Wellington St., Ottawa, Ontario, Canada</a>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                        <h5>Recent Location</h5>
+                        <a href="#" class="text-decoration-none modal-txt"><img
+                                src="./Images/Illustration/location orange.png" alt="">Bayshore</a><br>
+                        <a href="#" class="text-decoration-none text-dark">kingston St., Ottawa, Ontario, Canada</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-transperant" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn rounded-pill save-btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav section end  -->
+        <!-- hero start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column align-items-cente justify-content-center hero-txt">
+                    <h1 class="text-light mb-5">Discover restaurants that food deliver near you</h1>
+                    <div class="inp d-flex w-100">
+                        <input type="text" class="form-control form-control-lg me-3 rounded-pill "
+                            placeholder="Search for restaurants">
+                        <button class="btn fw-medium fs-5 rounded-pill w-25 scearch-btn">Search</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero end -->
+    <!-- third secction start -->
+    <div class="popcorn-img">
+        <img src="./Images/Illustration/popcorn.png" alt="">
+    </div>
+    <section class="third-section w-100 d-flex justify-content-center">
+        <div class="row product text-center rounded-4 shadow">
+            <div class="col-6 col-md-2 col-lg-2 p-4 products ">
+                <img src="./Images/Illustration/p-1.png" height="90px" width="90px">
+                <p class="fs-5 fw-medium">Pizza</p>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2  p-4 products">
+                <img src="./Images/Illustration/p-2.png" height="90px" width="90px">
+                <p class="fs-5 fw-medium">Chicken</p>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-4 products product3">
+                <img src="./Images/Illustration/p-3.png " height="90px" width="90px">
+                <p class="fs-5 fw-medium">Burger</p>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-4 products product4">
+                <img src="./Images/Illustration/p-7.png" height="90px" width="90px">
+                <p class="fs-5 fw-medium">Muffin</p>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-4 products product4">
+                <img src="./Images/Illustration/p-5.png" height="90px" width="90px">
+                <p class="fs-5 fw-medium">Baritto</p>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-4 products product6">
+                <img src="./Images/Illustration/p-6.png" height="90px" width="90px">
+                <p class="fs-5 fw-medium">Taco</p>
+            </div>
+        </div>
+    </section>
+    <!-- third secction end -->
+    <!-- fourth section start -->
+    <section class="fourth-section d-flex justify-content-center">
+        <div class="fourth-section-main">
+            <h3>Today’s Deal</h3>
+            <p>Take a benefit from our latest offers.</p>
+            <div class="row d-flex justify-content-between">
+                <div class="col-6 col-md-3 col-lg-3  ">
+                    <div class="banner1 rounded-3"></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="banner2 rounded-3"></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3  ban">
+                    <div class="banner3 rounded-3"></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 ">
+                    <div class="banner4 rounded-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fourth section end -->
+    <!-- fifth section start -->
+    <section class="fifth-section d-flex justify-content-center bg-light pt-3 pb-3">
+        <div class="fifth-section-main">
+            <h3>Featured Restaurants</h3>
+            <div class="row row-gap-3">
+                <div class="col-12 col-md-6 col-lg-3 " data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-9.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Poultry Palace <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span
+                                        class="fs-6"></span>
+                                    3.5</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">New Jsercy
+                                <span><img src="./Images/Illustration/location.png" alt=""> 3.5 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 25 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-10.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Ribeye Junction <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        3.9</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">California
+                                <span><img src="./Images/Illustration/location.png" alt=""> 2.5 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 15 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-11.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">The Grill Master's Cafe<p>
+                                    <img src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.1</span>
+                                </p>
+                            </h5>
+                            <p class="card-text text-secondary">Bread, Eggs, Butter, Fries...</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">New York
+                                <span><img src="./Images/Illustration/location.png" alt=""> 4.2 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 35 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-12.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Cozy Cuppa Cafe <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.5</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">cheesecake, waffles, Cakes,...</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Dallas
+                                <span><img src="./Images/Illustration/location.png" alt=""> 5.5 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 45 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-13.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Mocha Magic Cafe<p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span
+                                        class="fs-6"></span>
+                                    3.2</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chinese, Momos, Dumplings,...</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Seattle
+                                <span><img src="./Images/Illustration/location.png" alt=""> 1 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 8 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-14.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Latte Lounge <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        3.6</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Atlanta
+                                <span><img src="./Images/Illustration/location.png" alt=""> 2 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 25 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-15.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">The Burger Barn<p>
+                                    <img src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.1</span>
+                                </p>
+                            </h5>
+                            <p class="card-text text-secondary">Burger, Garlic Bread, Sandwich.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Chicago
+                                <span><img src="./Images/Illustration/location.png" alt=""> 2.2 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 22 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-16.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Wing Master <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.5</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">New york
+                                <span><img src="./Images/Illustration/location.png" alt=""> 4.8 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 35 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- fifth section end -->
+    <!-- sixth-section start  -->
+    <section class="sixth-section d-flex justify-content-center">
+        <div class="sixth-section-main">
+            <h3>Brand For You</h3>
+            <p>Browse out top brands here to discover different food cuision.</p>
+            <div class="row d-flex justify-content-evenly row-gap-3">
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand11.png" class="" alt="" height="90px" width="90px">
+                    <p>KFC</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand2.png" class="" alt="" height="90px" width="90px">
+                    <p>Mc'd</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand3.png" class="" alt="" height="90px" width="90px">
+                    <p>Starbucks</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand4.png" class="" alt="" height="90px" width="90px">
+                    <p>Pizza'huzzs</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand5.png" class="" alt="" height="90px" width="90px">
+                    <p>Wendays</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand6.png" class="" alt="" height="90px" width="90px">
+                    <p>Burger</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand7.png" class="" alt="" height="90px" width="90px">
+                    <p>Subway</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-1 text-center fw-medium fs-5 brands">
+                    <img src="./Images/Illustration/brand8.png" class="" alt="" height="90px" width="90px">
+                    <p>Dominos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sixth-section end  -->
+    <!-- seventh-section start  -->
+    <section class="seventh-section d-flex justify-content-center">
+        <div class="seventh-section-main">
+            <h3>Popular Restaurants</h3>
+            <p>Find nearby popular Restaurants.</p>
+            <div class="row row-gap-3">
+                <div class="col-12 col-md-6 col-lg-3 "data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-1.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Poultry Palace <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span
+                                        class="fs-6"></span>
+                                    3.5</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">New Jsercy
+                                <span><img src="./Images/Illustration/location.png" alt=""> 3.5 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 25 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-2.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Ribeye Junction <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        3.9</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">California
+                                <span><img src="./Images/Illustration/location.png" alt=""> 2.5 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 15 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-3.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">The Grill Master's Cafe<p>
+                                    <img src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.1</span>
+                                </p>
+                            </h5>
+                            <p class="card-text text-secondary">Bread, Eggs, Butter, Fries...</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">New York
+                                <span><img src="./Images/Illustration/location.png" alt=""> 4.2 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 35 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-4.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Cozy Cuppa Cafe <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.5</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">cheesecake, waffles, Cakes,...</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Dallas
+                                <span><img src="./Images/Illustration/location.png" alt=""> 5.5 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 45 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-5.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Mocha Magic Cafe<p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span
+                                        class="fs-6"></span>
+                                    3.2</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chinese, Momos, Dumplings,...</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Seattle
+                                <span><img src="./Images/Illustration/location.png" alt=""> 1 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 8 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-6.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Latte Lounge <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        3.6</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Atlanta
+                                <span><img src="./Images/Illustration/location.png" alt=""> 2 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 25 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-7.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">The Burger Barn<p>
+                                    <img src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.1</span>
+                                </p>
+                            </h5>
+                            <p class="card-text text-secondary">Burger, Garlic Bread, Sandwich.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">Chicago
+                                <span><img src="./Images/Illustration/location.png" alt=""> 2.2 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 22 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card" style="width: auto;">
+                        <img src="./Images/Illustration/vp-8.png" class="card-img-top p-2 rounded-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between fw-medium">Wing Master <p><img
+                                        src="./Images/Illustration/star-inside-circle.png" alt=""><span class="fs-6">
+                                        4.5</span></p>
+                            </h5>
+                            <p class="card-text text-secondary">Chicken quesadilla, avocado.....</p>
+                            <hr>
+
+                            <span class="d-flex justify-content-between fw-medium">New york
+                                <span><img src="./Images/Illustration/location.png" alt=""> 4.8 km</span>
+                                <span><img src="./Images/Illustration/time.png" alt=""> 35 min</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seventh-section end  -->
+
+    <!-- eighth-section start  -->
+    <section class="eighth-section d-flex justify-content-center">
+        <div class="eighth-section-main">
+            <div class="ad d-flex justify-content-between">
+                <div class="phone-img">
+                    <img src="./Images/Illustration/service-phone.png" height="470px" width="470px" alt="">
+                </div>
+                <div class="download-content">
+                    <h2 class="text-light fw-bold mt-3 ">Zomo App : Online & Mobile Ordering</h2>
+                    <h5 class="text-light "> Get the app for free and place takeout orders online whenever you want</h5>
+                    <div class="row d-flex justify-content-between mb-3 w-100">
+                        <div class="col-6 ">
+                            <img src="./Images/Illustration/google-play.svg" height="50px" width="120px" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="./Images/Illustration/app-store.svg" height="50px" width="120px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- eighth-section end -->
+    <!-- footer-section start  -->
+    <section class="footer-section d-flex justify-content-center">
+        <div class="footer-section-main">
+            <div class="row mt-5 mb-2">
+                <div class="col-12 col-md-6">
+                    <h5 class="text-light">
+                        Don't pass up our fantastic discounts. email offers from all
+                        of our best eateries
+                    </h5>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control email-inp" placeholder="Enter Your Email"
+                            aria-describedby="basic-addon2">
+                        <a href="" class="text-decoration-none "><span
+                                class="input-group-text text-light sub-btn fw-medium" id="basic-addon2">Subscribe
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light">
+
+            <div class="row">
+                <div class="col-12">
+                    <img src="./Images/Illustration/logo.svg" height="70px" width="130px" alt="">
+                    <p class="text-light">
+                        Welcome to our online order website! Here, you can browse our
+                        wide selection of products and place orders from the comfort
+                        of your own home.
+                    </p>
+                </div>
+
+
+                <div class="col-12 accordion-main">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    | Company
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary fw-medium">About us</p>
+                                    <p class="text-secondary fw-medium">Contact Us</p>
+                                    <p class="text-secondary fw-medium">Offer</p>
+                                    <p class="text-secondary fw-medium">FAQ's</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    | Account
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary fw-medium">My orders</p>
+                                    <p class="text-secondary fw-medium">Watchlist</p>
+                                    <p class="text-secondary fw-medium">Shooping cart</p>
+                                    <p class="text-secondary fw-medium">Saved Address</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    | Useful Links
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary fw-medium">Blog</p>
+                                    <p class="text-secondary fw-medium">Login</p>
+                                    <p class="text-secondary fw-medium">Register</p>
+                                    <p class="text-secondary fw-medium">Profile</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    | Top Brands
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-secondary fw-medium">Pizzaboy</p>
+                                    <p class="text-secondary fw-medium">Saladish</p>
+                                    <p class="text-secondary fw-medium">Icepops</p>
+                                    <p class="text-secondary fw-medium">Maxican Hoy</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="row mb-5 ">
+                <div class="col-12 col-lg-6">
+                    <h6 class="text-light text-center">@ Copyright 2024 ZOMO. All rights Reserved.</h6>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="./Images/Illustration/footer-card.png" width="280px" alt="">
+                </div>
+            </div>
+
+    </section>
+    <!-- footer-section end  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
